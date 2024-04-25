@@ -76,7 +76,11 @@ namespace COMP1640_WebDev.Controllers
 			@ViewBag.Contributions = contributions;
 			if (DateTime.Now >= academicYear.ClosureDate)
 			{
+<<<<<<< HEAD
 				TempData["AlertMessage"] = "The deadline has passed and no contribution has been made";
+=======
+				TempData["AlertMessage"] = "Qua han roi khong tao contribution duoc";
+>>>>>>> d453637a6d37a7f41f6a6a790cb1c13c33ad6205
 
 			}
 			else
@@ -117,7 +121,34 @@ namespace COMP1640_WebDev.Controllers
 		}
 
 
+<<<<<<< HEAD
 	
+=======
+		//[HttpPost]
+		//public async Task<IActionResult> AddComment(ContributeViewModel data, List<IFormFile> files)
+		//{
+		//    var userId = _userManager.GetUserId(User);
+		//    Contribution contri = new();
+		//    var user = await _userRepository.GetUser(userId!);
+		//    var academicYear = await _academicYearRepository.GetAcademicYear(data.AcademicYearId);
+		//    using (var memoryStream = new MemoryStream())
+		//    {
+		//        await files[0].CopyToAsync(memoryStream);
+		//        contri.AcademicYearId = data.AcademicYearId;
+		//        contri.Title = data.Title;
+		//        contri.Document = data.Document;
+		//        contri.UserId = userId;
+		//        contri.Image = memoryStream.ToArray();
+		//        contri.IsEnabled = true;
+		//    };
+		//    if (DateTime.Now > academicYear.ClosureDate)
+		//    {
+		//        contri.IsEnabled = false;
+		//    }
+		//    await _contributionRepository.CreateContribution(contri);
+		//    return View();
+		//}
+>>>>>>> d453637a6d37a7f41f6a6a790cb1c13c33ad6205
 
 		[HttpGet]
 		public async Task<IActionResult> EditComment(string id)
