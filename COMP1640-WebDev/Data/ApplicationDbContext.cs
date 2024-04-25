@@ -93,7 +93,7 @@ public class ApplicationDbContext : IdentityDbContext<User>
                 Email = "admin@gmail.com",
                 NormalizedEmail = "ADMIN@GMAIL.COM",
                 EmailConfirmed = true,
-                PasswordHash = "AQAAAAIAAYagAAAAEKP/gJ6XGMLQpnKKGQH7IsGMKoqwwAyh5MGKWcnLP3OBjP/DRkS4PFY1BfiRbVjfWg==",
+                PasswordHash = "AQAAAAIAAYagAAAAEJ9RU6UgEP33/CSdsobNZRqevefL17bmVoubtHq2pvhRViA53Rg7RbmRqkfdVlFiVQ==",
                 SecurityStamp = "VAXURNACT25EQBDVHYPTL7OHXP6OHZXM",
                 ConcurrencyStamp = "d719e974-32f6-4ff1-b45b-5e1f5ca82808",
                 TwoFactorEnabled = false,

@@ -65,6 +65,10 @@ namespace COMP1640_WebDev.Migrations
                         .IsRequired()
                         .HasColumnType("varbinary(max)");
 
+                    b.Property<string>("ImageString")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsEnabled")
                         .HasColumnType("bit");
 
@@ -309,7 +313,7 @@ namespace COMP1640_WebDev.Migrations
                             LockoutEnabled = true,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKP/gJ6XGMLQpnKKGQH7IsGMKoqwwAyh5MGKWcnLP3OBjP/DRkS4PFY1BfiRbVjfWg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJ9RU6UgEP33/CSdsobNZRqevefL17bmVoubtHq2pvhRViA53Rg7RbmRqkfdVlFiVQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "VAXURNACT25EQBDVHYPTL7OHXP6OHZXM",
                             TwoFactorEnabled = false,

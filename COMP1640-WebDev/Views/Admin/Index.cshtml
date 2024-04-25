@@ -33,8 +33,10 @@
 @section scripts {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
+        // Sample data for charts (replace with actual data)
         var usersData = @Html.Raw(Json.Serialize(ViewBag.UsersData));
 
+        // Create users chart
         var usersChart = new Chart(document.getElementById('usersChart'), {
             type: 'bar',
             data: {
@@ -56,6 +58,7 @@
                             max: 100,
                             min: 0
                         }
+
                     },
                     x: {
                         ticks: {

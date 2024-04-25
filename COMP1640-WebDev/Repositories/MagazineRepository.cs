@@ -56,6 +56,8 @@ namespace COMP1640_WebDev.Repositories
                     default:
                         break;
                 }
+
+  
             }
             return magazines;
         }
